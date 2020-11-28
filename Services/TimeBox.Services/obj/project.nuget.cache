@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "lup1VSItVztCiYCX56QbllNWhIQQsvgdgtqnC8xld044sfVVueM1UDiBsZp4/rQV0kGPVYQWHEuy3zXmqPrf8Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services\\TimeBox.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Velina\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.205\\stylecop.analyzers.1.2.0-beta.205.nupkg.sha512",
+    "C:\\Users\\Velina\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.205\\stylecop.analyzers.unstable.1.2.0.205.nupkg.sha512"
+  ],
+  "logs": []
+}

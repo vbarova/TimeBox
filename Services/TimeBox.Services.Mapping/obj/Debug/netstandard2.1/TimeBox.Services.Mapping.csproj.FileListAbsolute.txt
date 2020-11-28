@@ -1,0 +1,9 @@
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Mapping\bin\Debug\netstandard2.1\TimeBox.Services.Mapping.deps.json
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Mapping\bin\Debug\netstandard2.1\TimeBox.Services.Mapping.dll
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Mapping\bin\Debug\netstandard2.1\TimeBox.Services.Mapping.pdb
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Mapping\obj\Debug\netstandard2.1\TimeBox.Services.Mapping.csprojAssemblyReference.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Mapping\obj\Debug\netstandard2.1\TimeBox.Services.Mapping.AssemblyInfoInputs.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Mapping\obj\Debug\netstandard2.1\TimeBox.Services.Mapping.AssemblyInfo.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Mapping\obj\Debug\netstandard2.1\TimeBox.Services.Mapping.csproj.CoreCompileInputs.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Mapping\obj\Debug\netstandard2.1\TimeBox.Services.Mapping.dll
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Mapping\obj\Debug\netstandard2.1\TimeBox.Services.Mapping.pdb

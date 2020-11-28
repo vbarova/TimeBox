@@ -1,0 +1,9 @@
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services\bin\Debug\netstandard2.1\TimeBox.Services.deps.json
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services\bin\Debug\netstandard2.1\TimeBox.Services.dll
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services\bin\Debug\netstandard2.1\TimeBox.Services.pdb
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services\obj\Debug\netstandard2.1\TimeBox.Services.csprojAssemblyReference.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services\obj\Debug\netstandard2.1\TimeBox.Services.AssemblyInfoInputs.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services\obj\Debug\netstandard2.1\TimeBox.Services.AssemblyInfo.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services\obj\Debug\netstandard2.1\TimeBox.Services.csproj.CoreCompileInputs.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services\obj\Debug\netstandard2.1\TimeBox.Services.dll
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services\obj\Debug\netstandard2.1\TimeBox.Services.pdb

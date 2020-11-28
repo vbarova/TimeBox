@@ -1,0 +1,9 @@
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Common\bin\Debug\netstandard2.1\TimeBox.Data.Common.deps.json
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Common\bin\Debug\netstandard2.1\TimeBox.Data.Common.dll
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Common\bin\Debug\netstandard2.1\TimeBox.Data.Common.pdb
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Common\obj\Debug\netstandard2.1\TimeBox.Data.Common.csprojAssemblyReference.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Common\obj\Debug\netstandard2.1\TimeBox.Data.Common.AssemblyInfoInputs.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Common\obj\Debug\netstandard2.1\TimeBox.Data.Common.AssemblyInfo.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Common\obj\Debug\netstandard2.1\TimeBox.Data.Common.csproj.CoreCompileInputs.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Common\obj\Debug\netstandard2.1\TimeBox.Data.Common.dll
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Common\obj\Debug\netstandard2.1\TimeBox.Data.Common.pdb

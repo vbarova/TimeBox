@@ -1,0 +1,9 @@
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web.Infrastructure\bin\Debug\netstandard2.1\TimeBox.Web.Infrastructure.deps.json
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web.Infrastructure\bin\Debug\netstandard2.1\TimeBox.Web.Infrastructure.dll
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web.Infrastructure\bin\Debug\netstandard2.1\TimeBox.Web.Infrastructure.pdb
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web.Infrastructure\obj\Debug\netstandard2.1\TimeBox.Web.Infrastructure.csprojAssemblyReference.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web.Infrastructure\obj\Debug\netstandard2.1\TimeBox.Web.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web.Infrastructure\obj\Debug\netstandard2.1\TimeBox.Web.Infrastructure.AssemblyInfo.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web.Infrastructure\obj\Debug\netstandard2.1\TimeBox.Web.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web.Infrastructure\obj\Debug\netstandard2.1\TimeBox.Web.Infrastructure.dll
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web.Infrastructure\obj\Debug\netstandard2.1\TimeBox.Web.Infrastructure.pdb

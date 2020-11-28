@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "YlbyIDKOy82a0PIFTZzh/r7m4Vy301JO79ecNfKuHndSGitzJP7NUrjRWLB3zZE2TH2IacsEQHs3BrNXaBdLZw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Common\\TimeBox.Data.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Velina\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.205\\stylecop.analyzers.1.2.0-beta.205.nupkg.sha512",
+    "C:\\Users\\Velina\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.205\\stylecop.analyzers.unstable.1.2.0.205.nupkg.sha512",
+    "C:\\Users\\Velina\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

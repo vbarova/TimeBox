@@ -1,0 +1,794 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Web\\TimeBox.Web\\TimeBox.Web.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Common\\TimeBox.Data.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Common\\TimeBox.Data.Common.csproj",
+        "projectName": "TimeBox.Data.Common",
+        "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Common\\TimeBox.Data.Common.csproj",
+        "packagesPath": "C:\\Users\\Velina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Velina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.205, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Models\\TimeBox.Data.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Models\\TimeBox.Data.Models.csproj",
+        "projectName": "TimeBox.Data.Models",
+        "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Models\\TimeBox.Data.Models.csproj",
+        "packagesPath": "C:\\Users\\Velina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Velina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Common\\TimeBox.Data.Common.csproj": {
+                "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Common\\TimeBox.Data.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.205, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data\\TimeBox.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data\\TimeBox.Data.csproj",
+        "projectName": "TimeBox.Data",
+        "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data\\TimeBox.Data.csproj",
+        "packagesPath": "C:\\Users\\Velina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Velina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Common\\TimeBox.Data.Common.csproj": {
+                "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Common\\TimeBox.Data.Common.csproj"
+              },
+              "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Models\\TimeBox.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Models\\TimeBox.Data.Models.csproj"
+              },
+              "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\TimeBox.Common\\TimeBox.Common.csproj": {
+                "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\TimeBox.Common\\TimeBox.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.Extensions.Configuration.UserSecrets": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.205, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Data\\TimeBox.Services.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Data\\TimeBox.Services.Data.csproj",
+        "projectName": "TimeBox.Services.Data",
+        "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Data\\TimeBox.Services.Data.csproj",
+        "packagesPath": "C:\\Users\\Velina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Velina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Common\\TimeBox.Data.Common.csproj": {
+                "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Common\\TimeBox.Data.Common.csproj"
+              },
+              "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Models\\TimeBox.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Models\\TimeBox.Data.Models.csproj"
+              },
+              "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Mapping\\TimeBox.Services.Mapping.csproj": {
+                "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Mapping\\TimeBox.Services.Mapping.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.205, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Mapping\\TimeBox.Services.Mapping.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Mapping\\TimeBox.Services.Mapping.csproj",
+        "projectName": "TimeBox.Services.Mapping",
+        "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Mapping\\TimeBox.Services.Mapping.csproj",
+        "packagesPath": "C:\\Users\\Velina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Mapping\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Velina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.205, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Messaging\\TimeBox.Services.Messaging.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Messaging\\TimeBox.Services.Messaging.csproj",
+        "projectName": "TimeBox.Services.Messaging",
+        "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Messaging\\TimeBox.Services.Messaging.csproj",
+        "packagesPath": "C:\\Users\\Velina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Messaging\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Velina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Sendgrid": {
+              "target": "Package",
+              "version": "[9.21.0, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.205, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services\\TimeBox.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services\\TimeBox.Services.csproj",
+        "projectName": "TimeBox.Services",
+        "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services\\TimeBox.Services.csproj",
+        "packagesPath": "C:\\Users\\Velina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Velina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.205, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\TimeBox.Common\\TimeBox.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\TimeBox.Common\\TimeBox.Common.csproj",
+        "projectName": "TimeBox.Common",
+        "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\TimeBox.Common\\TimeBox.Common.csproj",
+        "packagesPath": "C:\\Users\\Velina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\TimeBox.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Velina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.205, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Web\\TimeBox.Web.Infrastructure\\TimeBox.Web.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Web\\TimeBox.Web.Infrastructure\\TimeBox.Web.Infrastructure.csproj",
+        "projectName": "TimeBox.Web.Infrastructure",
+        "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Web\\TimeBox.Web.Infrastructure\\TimeBox.Web.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Velina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Web\\TimeBox.Web.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Velina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.205, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Web\\TimeBox.Web.ViewModels\\TimeBox.Web.ViewModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Web\\TimeBox.Web.ViewModels\\TimeBox.Web.ViewModels.csproj",
+        "projectName": "TimeBox.Web.ViewModels",
+        "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Web\\TimeBox.Web.ViewModels\\TimeBox.Web.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\Velina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Web\\TimeBox.Web.ViewModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Velina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Models\\TimeBox.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Models\\TimeBox.Data.Models.csproj"
+              },
+              "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Mapping\\TimeBox.Services.Mapping.csproj": {
+                "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Mapping\\TimeBox.Services.Mapping.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.205, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Web\\TimeBox.Web\\TimeBox.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Web\\TimeBox.Web\\TimeBox.Web.csproj",
+        "projectName": "TimeBox.Web",
+        "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Web\\TimeBox.Web\\TimeBox.Web.csproj",
+        "packagesPath": "C:\\Users\\Velina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Web\\TimeBox.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Velina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Models\\TimeBox.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data.Models\\TimeBox.Data.Models.csproj"
+              },
+              "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data\\TimeBox.Data.csproj": {
+                "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Data\\TimeBox.Data\\TimeBox.Data.csproj"
+              },
+              "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Data\\TimeBox.Services.Data.csproj": {
+                "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Data\\TimeBox.Services.Data.csproj"
+              },
+              "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Mapping\\TimeBox.Services.Mapping.csproj": {
+                "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Mapping\\TimeBox.Services.Mapping.csproj"
+              },
+              "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Messaging\\TimeBox.Services.Messaging.csproj": {
+                "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services.Messaging\\TimeBox.Services.Messaging.csproj"
+              },
+              "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services\\TimeBox.Services.csproj": {
+                "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Services\\TimeBox.Services\\TimeBox.Services.csproj"
+              },
+              "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\TimeBox.Common\\TimeBox.Common.csproj": {
+                "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\TimeBox.Common\\TimeBox.Common.csproj"
+              },
+              "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Web\\TimeBox.Web.Infrastructure\\TimeBox.Web.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Web\\TimeBox.Web.Infrastructure\\TimeBox.Web.Infrastructure.csproj"
+              },
+              "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Web\\TimeBox.Web.ViewModels\\TimeBox.Web.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\Velina\\source\\repos\\SoftUni\\My projects\\TimeBox\\Web\\TimeBox.Web.ViewModels\\TimeBox.Web.ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "BuildBundlerMinifier": {
+              "target": "Package",
+              "version": "[3.2.449, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.Web.LibraryManager.Build": {
+              "target": "Package",
+              "version": "[2.1.113, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.205, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

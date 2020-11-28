@@ -1,0 +1,9 @@
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Messaging\bin\Debug\netstandard2.1\TimeBox.Services.Messaging.deps.json
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Messaging\bin\Debug\netstandard2.1\TimeBox.Services.Messaging.dll
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Messaging\bin\Debug\netstandard2.1\TimeBox.Services.Messaging.pdb
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Messaging\obj\Debug\netstandard2.1\TimeBox.Services.Messaging.csprojAssemblyReference.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Messaging\obj\Debug\netstandard2.1\TimeBox.Services.Messaging.AssemblyInfoInputs.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Messaging\obj\Debug\netstandard2.1\TimeBox.Services.Messaging.AssemblyInfo.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Messaging\obj\Debug\netstandard2.1\TimeBox.Services.Messaging.csproj.CoreCompileInputs.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Messaging\obj\Debug\netstandard2.1\TimeBox.Services.Messaging.dll
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Messaging\obj\Debug\netstandard2.1\TimeBox.Services.Messaging.pdb

@@ -1,0 +1,12 @@
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Models\bin\Debug\netstandard2.1\TimeBox.Data.Models.deps.json
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Models\bin\Debug\netstandard2.1\TimeBox.Data.Models.dll
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Models\bin\Debug\netstandard2.1\TimeBox.Data.Models.pdb
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Models\bin\Debug\netstandard2.1\TimeBox.Data.Common.dll
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Models\bin\Debug\netstandard2.1\TimeBox.Data.Common.pdb
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Models\obj\Debug\netstandard2.1\TimeBox.Data.Models.csprojAssemblyReference.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Models\obj\Debug\netstandard2.1\TimeBox.Data.Models.AssemblyInfoInputs.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Models\obj\Debug\netstandard2.1\TimeBox.Data.Models.AssemblyInfo.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Models\obj\Debug\netstandard2.1\TimeBox.Data.Models.csproj.CoreCompileInputs.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Models\obj\Debug\netstandard2.1\TimeBox.Data.Models.csproj.CopyComplete
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Models\obj\Debug\netstandard2.1\TimeBox.Data.Models.dll
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Data\TimeBox.Data.Models\obj\Debug\netstandard2.1\TimeBox.Data.Models.pdb
