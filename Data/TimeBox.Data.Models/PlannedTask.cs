@@ -10,15 +10,11 @@
 
         public DateTime Date { get; set; }
 
-        public DateTime StartingTime { get; set; }
+        public DateTime StartTime { get; set; }
 
-        public TimeSpan Duration { get; set; }
+        public DateTime EndTime { get; set; }
 
         public string Description { get; set; }
-
-        public int LocationId { get; set; }
-
-        public virtual Location Location { get; set; }
 
         public int CategoryId { get; set; }
 

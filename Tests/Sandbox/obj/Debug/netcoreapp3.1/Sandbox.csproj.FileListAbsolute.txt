@@ -91,3 +91,5 @@ C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\Sandbox\obj\Debug
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\Sandbox\obj\Debug\netcoreapp3.1\Sandbox.dll
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\Sandbox\obj\Debug\netcoreapp3.1\Sandbox.pdb
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\Sandbox\obj\Debug\netcoreapp3.1\Sandbox.genruntimeconfig.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\Sandbox\bin\Debug\netcoreapp3.1\TimeBox.Web.ViewModels.dll
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\Sandbox\bin\Debug\netcoreapp3.1\TimeBox.Web.ViewModels.pdb

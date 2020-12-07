@@ -10,7 +10,7 @@ C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web.ViewMod
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web.ViewModels\obj\Debug\netstandard2.1\TimeBox.Web.ViewModels.csprojAssemblyReference.cache
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web.ViewModels\obj\Debug\netstandard2.1\TimeBox.Web.ViewModels.AssemblyInfoInputs.cache
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web.ViewModels\obj\Debug\netstandard2.1\TimeBox.Web.ViewModels.AssemblyInfo.cs
-C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web.ViewModels\obj\Debug\netstandard2.1\TimeBox.Web.ViewModels.csproj.CoreCompileInputs.cache
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web.ViewModels\obj\Debug\netstandard2.1\TimeBox.Web.ViewModels.csproj.CopyComplete
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web.ViewModels\obj\Debug\netstandard2.1\TimeBox.Web.ViewModels.dll
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web.ViewModels\obj\Debug\netstandard2.1\TimeBox.Web.ViewModels.pdb
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web.ViewModels\obj\Debug\netstandard2.1\TimeBox.Web.ViewModels.csproj.CoreCompileInputs.cache

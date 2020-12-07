@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\TimeBox.Data.Common\TimeBox.Data.Common.csproj" />
     <ProjectReference Include="..\..\Data\TimeBox.Data.Models\TimeBox.Data.Models.csproj" />
+    <ProjectReference Include="..\..\Web\TimeBox.Web.ViewModels\TimeBox.Web.ViewModels.csproj" />
     <ProjectReference Include="..\TimeBox.Services.Mapping\TimeBox.Services.Mapping.csproj" />
   </ItemGroup>
 

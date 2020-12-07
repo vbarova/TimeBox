@@ -31,8 +31,6 @@
 
         public DbSet<Image> Images { get; set; }
 
-        public DbSet<Location> Locations { get; set; }
-
         public DbSet<Note> Notes { get; set; }
 
         public DbSet<Quote> Quotes { get; set; }

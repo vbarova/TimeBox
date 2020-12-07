@@ -3505,7 +3505,8 @@
         "dependencies": {
           "TimeBox.Data.Common": "1.0.0",
           "TimeBox.Data.Models": "1.0.0",
-          "TimeBox.Services.Mapping": "1.0.0"
+          "TimeBox.Services.Mapping": "1.0.0",
+          "TimeBox.Web.ViewModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/TimeBox.Services.Data.dll": {}

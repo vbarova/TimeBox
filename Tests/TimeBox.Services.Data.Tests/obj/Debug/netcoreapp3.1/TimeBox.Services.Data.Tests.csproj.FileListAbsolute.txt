@@ -162,3 +162,5 @@ C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Services.
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Services.Data.Tests\obj\Debug\netcoreapp3.1\TimeBox.Services.Data.Tests.dll
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Services.Data.Tests\obj\Debug\netcoreapp3.1\TimeBox.Services.Data.Tests.pdb
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Services.Data.Tests\obj\Debug\netcoreapp3.1\TimeBox.Services.Data.Tests.genruntimeconfig.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Services.Data.Tests\bin\Debug\netcoreapp3.1\TimeBox.Web.ViewModels.dll
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Services.Data.Tests\bin\Debug\netcoreapp3.1\TimeBox.Web.ViewModels.pdb

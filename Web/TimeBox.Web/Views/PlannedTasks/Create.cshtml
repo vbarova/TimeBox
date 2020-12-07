@@ -1,0 +1,42 @@
+﻿@model TimeBox.Web.ViewModels.PlannedTask.CreatePlannedTaskInputModel
+@{ 
+    this.ViewData["Title"] = "Нова задача";
+    var categoryItems = this.Model.CategoriesItems.Select(x => new SelectListItem(x.Value, x.Key));
+}
+
+
+<form method="post" class="col-md-6 offset-md-3">
+    <h1>@this.ViewData["Title"]</h1>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label aps-for="Title">Заглавие</label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validatio-for="Title" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label aps-for="Date">Дата</label>
+        <input type="date" value="@DateTime.Now" asp-for="Date" class="form-control" />
+        <span asp-validatio-for="Date" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label aps-for="Date">Начален час</label>
+        <input type="time" value="09:00" asp-for="StartTime" class="form-control" />
+        <span asp-validatio-for="StartTime" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label aps-for="Duration">Час на приключване</label>
+        <input type="time" value="09:30" asp-for="EndTime" class="form-control" />
+        <span asp-validatio-for="EndTime" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label aps-for="Description">Подробноси за задачата</label>
+        <textarea asp-for="Description" class="form-control" rows="5"></textarea>
+        <span asp-validatio-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label aps-for="CategoryId">Категория</label>
+        <select asp-for="CategoryId" class="form-control" asp-items="categoryItems"></select>
+        <span asp-validatio-for="CategoryId" class="text-danger"></span>
+    </div>
+    <input type="submit" class="btn btn-primary" />
+</form>

@@ -10,8 +10,8 @@ using TimeBox.Data;
 namespace TimeBox.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201128184734_AddAllNeededModels")]
-    partial class AddAllNeededModels
+    [Migration("20201207002703_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -335,38 +335,6 @@ namespace TimeBox.Data.Migrations
                     b.ToTable("Images");
                 });
 
-            modelBuilder.Entity("TimeBox.Data.Models.Location", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("City")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("CreatedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime?>("ModifiedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Place")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IsDeleted");
-
-                    b.ToTable("Locations");
-                });
-
             modelBuilder.Entity("TimeBox.Data.Models.Note", b =>
                 {
                     b.Property<int>("Id")
@@ -418,19 +386,16 @@ namespace TimeBox.Data.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<TimeSpan>("Duration")
-                        .HasColumnType("time");
+                    b.Property<DateTime>("EndTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<bool>("IsDone")
                         .HasColumnType("bit");
 
-                    b.Property<int>("LocationId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime?>("ModifiedOn")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("StartingTime")
+                    b.Property<DateTime>("StartTime")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Title")
@@ -441,8 +406,6 @@ namespace TimeBox.Data.Migrations
                     b.HasIndex("CategoryId");
 
                     b.HasIndex("CreatedByUserId");
-
-                    b.HasIndex("LocationId");
 
                     b.ToTable("PlannedTasks");
                 });
@@ -596,12 +559,6 @@ namespace TimeBox.Data.Migrations
                     b.HasOne("TimeBox.Data.Models.ApplicationUser", "CreatedByUser")
                         .WithMany()
                         .HasForeignKey("CreatedByUserId");
-
-                    b.HasOne("TimeBox.Data.Models.Location", "Location")
-                        .WithMany("Tasks")
-                        .HasForeignKey("LocationId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

@@ -14,3 +14,5 @@ C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Servic
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Data\obj\Debug\netstandard2.1\TimeBox.Services.Data.csproj.CopyComplete
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Data\obj\Debug\netstandard2.1\TimeBox.Services.Data.dll
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Data\obj\Debug\netstandard2.1\TimeBox.Services.Data.pdb
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Data\bin\Debug\netstandard2.1\TimeBox.Web.ViewModels.dll
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Services\TimeBox.Services.Data\bin\Debug\netstandard2.1\TimeBox.Web.ViewModels.pdb

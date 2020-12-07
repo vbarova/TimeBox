@@ -2694,7 +2694,8 @@
         "dependencies": {
           "TimeBox.Data.Common": "1.0.0",
           "TimeBox.Data.Models": "1.0.0",
-          "TimeBox.Services.Mapping": "1.0.0"
+          "TimeBox.Services.Mapping": "1.0.0",
+          "TimeBox.Web.ViewModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/TimeBox.Services.Data.dll": {}
@@ -2714,6 +2715,20 @@
         },
         "runtime": {
           "bin/placeholder/TimeBox.Services.Mapping.dll": {}
+        }
+      },
+      "TimeBox.Web.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "TimeBox.Data.Models": "1.0.0",
+          "TimeBox.Services.Mapping": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TimeBox.Web.ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TimeBox.Web.ViewModels.dll": {}
         }
       }
     }
@@ -8636,6 +8651,11 @@
       "type": "project",
       "path": "../../Services/TimeBox.Services.Mapping/TimeBox.Services.Mapping.csproj",
       "msbuildProject": "../../Services/TimeBox.Services.Mapping/TimeBox.Services.Mapping.csproj"
+    },
+    "TimeBox.Web.ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../../Web/TimeBox.Web.ViewModels/TimeBox.Web.ViewModels.csproj",
+      "msbuildProject": "../../Web/TimeBox.Web.ViewModels/TimeBox.Web.ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {

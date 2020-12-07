@@ -12,7 +12,8 @@
           "StyleCop.Analyzers": "1.2.0-beta.205",
           "TimeBox.Data.Common": "1.0.0",
           "TimeBox.Data.Models": "1.0.0",
-          "TimeBox.Services.Mapping": "1.0.0"
+          "TimeBox.Services.Mapping": "1.0.0",
+          "TimeBox.Web.ViewModels": "1.0.0"
         },
         "runtime": {
           "TimeBox.Services.Data.dll": {}
@@ -387,6 +388,15 @@
         "runtime": {
           "TimeBox.Services.Mapping.dll": {}
         }
+      },
+      "TimeBox.Web.ViewModels/1.0.0": {
+        "dependencies": {
+          "TimeBox.Data.Models": "1.0.0",
+          "TimeBox.Services.Mapping": "1.0.0"
+        },
+        "runtime": {
+          "TimeBox.Web.ViewModels.dll": {}
+        }
       }
     }
   },
@@ -652,6 +662,11 @@
       "sha512": ""
     },
     "TimeBox.Services.Mapping/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TimeBox.Web.ViewModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
