@@ -426,9 +426,6 @@ C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Deb
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\TimeBox.Web.csprojAssemblyReference.cache
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\TimeBox.Web.AssemblyInfoInputs.cache
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\TimeBox.Web.AssemblyInfo.cs
-C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\TimeBox.Web.csproj.CoreCompileInputs.cache
-C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\TimeBox.Web.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\TimeBox.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\TimeBox.Web.RazorAssemblyInfo.cache
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\TimeBox.Web.RazorAssemblyInfo.cs
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\TimeBox.Web.TagHelpers.input.cache
@@ -458,3 +455,11 @@ C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Deb
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\TimeBox.Web.genruntimeconfig.cache
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\PlannedTasks\Create.cshtml.g.cs
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\Notes\Create.cshtml.g.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\TimeBox.Web.csproj.CoreCompileInputs.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\TimeBox.Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\TimeBox.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
