@@ -529,7 +529,7 @@ namespace TimeBox.Data.Migrations
             modelBuilder.Entity("TimeBox.Data.Models.BlogPost", b =>
                 {
                     b.HasOne("TimeBox.Data.Models.ApplicationUser", "CreatedByUser")
-                        .WithMany()
+                        .WithMany("BlogPosts")
                         .HasForeignKey("CreatedByUserId");
                 });
 
@@ -545,7 +545,7 @@ namespace TimeBox.Data.Migrations
             modelBuilder.Entity("TimeBox.Data.Models.Note", b =>
                 {
                     b.HasOne("TimeBox.Data.Models.ApplicationUser", "CreatedByUser")
-                        .WithMany()
+                        .WithMany("Notes")
                         .HasForeignKey("CreatedByUserId");
                 });
 
@@ -558,7 +558,7 @@ namespace TimeBox.Data.Migrations
                         .IsRequired();
 
                     b.HasOne("TimeBox.Data.Models.ApplicationUser", "CreatedByUser")
-                        .WithMany()
+                        .WithMany("PlannedTasks")
                         .HasForeignKey("CreatedByUserId");
                 });
 #pragma warning restore 612, 618

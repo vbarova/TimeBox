@@ -10,7 +10,7 @@ using TimeBox.Data;
 namespace TimeBox.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201207002703_InitialCreate")]
+    [Migration("20201221190256_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -202,6 +202,9 @@ namespace TimeBox.Data.Migrations
 
                     b.Property<DateTime?>("ModifiedOn")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NormalizedEmail")
                         .HasColumnType("nvarchar(256)")
@@ -528,7 +531,7 @@ namespace TimeBox.Data.Migrations
             modelBuilder.Entity("TimeBox.Data.Models.BlogPost", b =>
                 {
                     b.HasOne("TimeBox.Data.Models.ApplicationUser", "CreatedByUser")
-                        .WithMany()
+                        .WithMany("BlogPosts")
                         .HasForeignKey("CreatedByUserId");
                 });
 
@@ -544,7 +547,7 @@ namespace TimeBox.Data.Migrations
             modelBuilder.Entity("TimeBox.Data.Models.Note", b =>
                 {
                     b.HasOne("TimeBox.Data.Models.ApplicationUser", "CreatedByUser")
-                        .WithMany()
+                        .WithMany("Notes")
                         .HasForeignKey("CreatedByUserId");
                 });
 
@@ -557,7 +560,7 @@ namespace TimeBox.Data.Migrations
                         .IsRequired();
 
                     b.HasOne("TimeBox.Data.Models.ApplicationUser", "CreatedByUser")
-                        .WithMany()
+                        .WithMany("PlannedTasks")
                         .HasForeignKey("CreatedByUserId");
                 });
 #pragma warning restore 612, 618

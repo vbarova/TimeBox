@@ -463,3 +463,4 @@ C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Deb
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
