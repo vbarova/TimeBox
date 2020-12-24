@@ -1,0 +1,20 @@
+﻿@model TimeBox.Web.ViewModels.Quote.CreateQuoteInputModel
+@{
+    this.ViewData["Title"] = "Добавете нов цитат";
+}
+
+<form method="post" class="col-md-6 offset-md-3">
+    <h1>@this.ViewData["Title"]</h1>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label aps-for="QuoteText">Заглавие</label>
+        <input asp-for="QuoteText" class="form-control" />
+        <span asp-validatio-for="QuoteText" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label aps-for="QuoteAuthor">Текст на бележка</label>
+        <textarea asp-for="QuoteAuthor" class="form-control" rows="5"></textarea>
+        <span asp-validatio-for="QuoteAuthor" class="text-danger"></span>
+    </div>
+    <input type="submit" class="btn btn-primary" />
+</form>
