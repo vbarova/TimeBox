@@ -6,6 +6,6 @@
 
     public interface IPlannedTasksService
     {
-        Task CreateAsync(CreatePlannedTaskInputModel input);
+        Task CreateAsync(CreatePlannedTaskInputModel input, string userId);
     }
 }

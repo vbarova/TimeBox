@@ -16,7 +16,7 @@
             this.plannedTasksRepository = plannedTasksRepository;
         }
 
-        public async Task CreateAsync(CreatePlannedTaskInputModel input)
+        public async Task CreateAsync(CreatePlannedTaskInputModel input, string userId)
         {
             var plannedTask = new PlannedTask
             {
@@ -26,6 +26,7 @@
                 EndTime = input.EndTime,
                 Description = input.Description,
                 CategoryId = input.CategoryId,
+                CreatedByUserId = userId,
             };
 
             await this.plannedTasksRepository.AddAsync(plannedTask);

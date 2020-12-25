@@ -2,6 +2,7 @@
 {
     using System.Threading.Tasks;
 
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using TimeBox.Services.Data;
     using TimeBox.Web.ViewModels.Quote;
@@ -15,6 +16,7 @@
             this.quotesService = quotesService;
         }
 
+        [Authorize]
         public IActionResult Create()
         {
             var viewModel = new CreateQuoteInputModel();
@@ -22,7 +24,7 @@
         }
 
         [HttpPost]
-
+        [Authorize]
         public async Task<IActionResult> Create(CreateQuoteInputModel input)
         {
             if (!this.ModelState.IsValid)

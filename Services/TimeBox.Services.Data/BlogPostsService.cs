@@ -11,7 +11,7 @@
 
     public class BlogPostsService : IBlogPostsService
     {
-        private readonly string[] allowedExtensions = new[] { "jpg", "png" };
+        private readonly string[] allowedExtensions = new[] { "JPG", "jpg", "PNG", "png" };
         private readonly IDeletableEntityRepository<BlogPost> blogPostsRepository;
 
         public BlogPostsService(IDeletableEntityRepository<BlogPost> blogPostsRepository)

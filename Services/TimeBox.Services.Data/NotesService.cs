@@ -15,13 +15,15 @@
             this.notesRepository = notesRepository;
         }
 
-        public async Task CreateAsync(CreateNoteInputModel input)
+        public async Task CreateAsync(CreateNoteInputModel input, string userId)
         {
             var note = new Note
             {
                 Title = input.Title,
 
                 Description = input.Description,
+
+                CreatedByUserId = userId,
             };
 
             await this.notesRepository.AddAsync(note);

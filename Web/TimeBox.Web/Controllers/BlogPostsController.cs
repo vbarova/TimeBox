@@ -29,6 +29,7 @@
             this.environment = environment;
         }
 
+        // TODO: [Authorize(Roles = "Administrator")]
         [Authorize]
         public IActionResult Create()
         {
@@ -36,6 +37,7 @@
             return this.View(viewModel);
         }
 
+        // TODO: [Authorize(Roles = "Administrator")]
         [HttpPost]
         [Authorize]
         public async Task<IActionResult> Create(CreateBlogPostInputModel input)

@@ -24,7 +24,6 @@
         [Display(Name = "Очакван час на приключване")]
         public DateTime EndTime { get; set; }
 
-        [Required]
         [Display(Name = "Описание на задачата")]
         public string Description { get; set; }
 

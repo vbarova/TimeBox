@@ -6,6 +6,6 @@
 
     public interface INotesService
     {
-        Task CreateAsync(CreateNoteInputModel input);
+        Task CreateAsync(CreateNoteInputModel input, string userId);
     }
 }
