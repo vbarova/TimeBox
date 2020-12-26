@@ -14,7 +14,6 @@
 
     public class BlogPostsController : Controller
     {
-        private readonly ApplicationDbContext db;
         private readonly IBlogPostsService blogPostsService;
         private readonly UserManager<ApplicationUser> userManager;
         private readonly IWebHostEnvironment environment;
@@ -61,6 +60,16 @@
 
             // TODO: Redirect to all blogposts
             return this.RedirectToAction("/");
+        }
+
+        public IActionResult All()
+        {
+            var viewModel = new BlogPostsListViewModel
+            {
+                BlogPosts = this.blogPostsService.GetAll(),
+            };
+
+            return this.View(viewModel);
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿namespace TimeBox.Services.Data
 {
     using System;
+    using System.Collections.Generic;
     using System.IO;
     using System.Linq;
     using System.Threading.Tasks;
@@ -51,6 +52,22 @@
 
             await this.blogPostsRepository.AddAsync(blogPost);
             await this.blogPostsRepository.SaveChangesAsync();
+        }
+
+        public IEnumerable<BlogPostInListViewModel> GetAll()
+        {
+            var blogPosts = this.blogPostsRepository.AllAsNoTracking()
+                .OrderByDescending(x => x.CreatedOn)
+                .Select(x => new BlogPostInListViewModel
+                {
+                    Id = x.Id,
+                    Title = x.Title,
+                    BlogTextPreview = x.BlogText.Substring(0, 50),
+                    CreatedByUserName = x.CreatedByUser.Name,
+                    CreatedOn = x.CreatedOn,
+                })
+                .ToList();
+            return blogPosts;
         }
     }
 }

@@ -13,7 +13,7 @@
         public string Title { get; set; }
 
         [Required]
-        [MinLength(20)]
+        [MinLength(200)]
         [Display(Name = "Текст на публикация")]
         public string BlogText { get; set; }
 
