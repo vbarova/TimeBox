@@ -537,3 +537,4 @@ C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Deb
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\lib\jquery\jquery.min.map
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\lib\jquery\jquery.slim.js
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\lib\jquery\jquery.slim.min.js
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\BlogPosts\ById.cshtml.g.cs

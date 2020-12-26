@@ -69,5 +69,24 @@
                 .ToList();
             return blogPosts;
         }
+
+        public BlogPostDetailsViewModel GetById(int id)
+        {
+            var blogPost = this.blogPostsRepository
+                .AllAsNoTracking()
+                .Where(x => x.Id == id)
+                .Select(x => new BlogPostDetailsViewModel
+                {
+                    Title = x.Title,
+                    BlogText = x.BlogText,
+                    Image = x.Images.FirstOrDefault(),
+                    CreatedByUserId = x.CreatedByUser.Id,
+                    CreatedByUser = x.CreatedByUser,
+                    CreatedOn = x.CreatedOn,
+                })
+                .ToList()
+                .FirstOrDefault();
+            return blogPost;
+        }
     }
 }

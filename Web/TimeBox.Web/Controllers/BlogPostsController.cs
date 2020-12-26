@@ -71,5 +71,11 @@
 
             return this.View(viewModel);
         }
+
+        public IActionResult ById(int id)
+        {
+            var blogPost = this.blogPostsService.GetById(id);
+            return this.View(blogPost);
+        }
     }
 }
