@@ -47,5 +47,17 @@
             // TODO: Redirect to list of notes page
             return this.Redirect("/");
         }
+
+        public async Task<IActionResult> AllAsync()
+        {
+            var user = await this.userManager.GetUserAsync(this.User);
+
+            var viewModel = new NotesListViewModel
+            {
+                Notes = this.notesService.GetAll(user),
+            };
+
+            return this.View(viewModel);
     }
+}
 }
