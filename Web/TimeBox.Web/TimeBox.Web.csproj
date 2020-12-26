@@ -53,9 +53,6 @@
     <Content Update="wwwroot\images\design\about-bg.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\design\contact-bg.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Update="wwwroot\images\design\home-bg.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

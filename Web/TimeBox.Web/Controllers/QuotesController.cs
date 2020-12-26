@@ -36,5 +36,15 @@
 
             return this.Redirect("/");
         }
+
+        public IActionResult All()
+        {
+            var viewModel = new QuotesListViewModel
+            {
+                Quotes = this.quotesService.GetAll(),
+            };
+
+            return this.View(viewModel);
+        }
     }
 }

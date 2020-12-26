@@ -1,5 +1,7 @@
 ﻿namespace TimeBox.Services.Data
 {
+    using System.Collections.Generic;
+    using System.Linq;
     using System.Threading.Tasks;
 
     using TimeBox.Data.Common.Repositories;
@@ -26,6 +28,21 @@
 
             await this.quotesRepository.AddAsync(quote);
             await this.quotesRepository.SaveChangesAsync();
+        }
+
+        public IEnumerable<QuoteInListViewModel> GetAll()
+        {
+            var quotes = this.quotesRepository.AllAsNoTracking()
+                .OrderByDescending(x => x.CreatedOn)
+                .Select(x => new QuoteInListViewModel
+                {
+                    Id = x.Id,
+                    QuoteText = x.QuoteText,
+                    QuoteAuthor = x.QuoteAuthor,
+                    CreatedOn = x.CreatedOn,
+                })
+                .ToList();
+            return quotes;
         }
     }
 }

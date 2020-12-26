@@ -59,8 +59,17 @@
                 <hr>
                 <!-- See all -->
                 <div class="clearfix">
-                    <a class="btn btn-primary float-left" asp-area="" asp-controller="BlogPosts" asp-action="Create"> Защо TimeBox &rarr;</a>
-                    <a class="btn btn-primary float-right" asp-area="" asp-controller="BlogPosts" asp-action="All">Виж всички публикации &rarr;</a>
+                    @if (!this.User.Identity.IsAuthenticated)
+                    {
+                        <a class="btn btn-primary float-left" asp-area="" asp-controller="BlogPosts" asp-action="Create"> Защо TimeBox &rarr;</a>
+                        <a class="btn btn-primary float-right" asp-area="" asp-controller="BlogPosts" asp-action="All">Виж всички публикации &rarr;</a>
+                    }
+                    @*TODO: if (this.User.IsInRole("Administrator"))*@
+                    @if (this.User.Identity.IsAuthenticated)
+                    {
+                        <a class="btn btn-primary float-left" asp-area="" asp-controller="Quotes" asp-action="All"> Всички цитати &rarr;</a>
+                        <a class="btn btn-primary float-right" asp-area="" asp-controller="BlogPosts" asp-action="All">Всички публикации &rarr;</a>
+                    }
                 </div>
             </div>
         </div>
