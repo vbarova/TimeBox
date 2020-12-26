@@ -1,6 +1,7 @@
 ﻿namespace TimeBox.Data.Seeding
 {
     using System;
+    using System.Linq;
     using System.Threading.Tasks;
 
     using TimeBox.Data.Models;
@@ -9,6 +10,11 @@
     {
         public async Task SeedAsync(ApplicationDbContext dbContext, IServiceProvider serviceProvider)
         {
+            if (dbContext.Categories.Any())
+            {
+                return;
+            }
+
             await dbContext.Quotes.AddAsync(new Quote
             {
                 QuoteText = "Най-добрият начин да проектираме бъдещето е да живеем правилно настоящето.",

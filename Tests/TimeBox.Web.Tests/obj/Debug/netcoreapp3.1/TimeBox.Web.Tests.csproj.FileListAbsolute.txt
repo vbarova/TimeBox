@@ -527,7 +527,6 @@ C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\obj\Debug\netcoreapp3.1\TimeBox.Web.Tests.genruntimeconfig.cache
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\bin\Debug\netcoreapp3.1\wwwroot\images\design\about-bg.jpg
-C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\bin\Debug\netcoreapp3.1\wwwroot\images\design\contact-bg.jpg
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\bin\Debug\netcoreapp3.1\wwwroot\images\design\home-bg.jpg
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\bin\Debug\netcoreapp3.1\wwwroot\css\clean-blog.css
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\bin\Debug\netcoreapp3.1\wwwroot\favicon-32x32.png
