@@ -2,13 +2,17 @@
 {
     using System.Diagnostics;
 
-    using TimeBox.Web.ViewModels;
-
     using Microsoft.AspNetCore.Mvc;
+    using TimeBox.Web.ViewModels;
 
     public class HomeController : BaseController
     {
         public IActionResult Index()
+        {
+            return this.View();
+        }
+
+        public IActionResult About()
         {
             return this.View();
         }
