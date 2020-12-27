@@ -47,13 +47,15 @@
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title" asp-controller="BlogPosts" asp-action="Newest">
-                            Идеи за вдъхновение
-                        </h2>
+                    <a>
+                        @if (this.User.Identity.IsAuthenticated && !this.User.IsInRole("Administrator"))
+                        {                            <h2 class="post-title" asp-controller="BlogPosts" asp-action="Newest">
+                                Идеи за вдъхновение
+                            </h2>
                         <h3 class="post-subtitle" asp-controller="BlogPosts" asp-action="Newest">
                             Как ефективно да управляваш времто си и да балансираш между задачите и любимите си занимания? Открий идеи, съвети и вдъхновение в блога на TimeBox.
                         </h3>
+                        }
                     </a>
                 </div>
                 <hr>
@@ -64,11 +66,25 @@
                         <a class="btn btn-primary float-left" asp-area="" asp-controller="BlogPosts" asp-action="Create"> Защо TimeBox &rarr;</a>
                         <a class="btn btn-primary float-right" asp-area="" asp-controller="BlogPosts" asp-action="All">Виж всички публикации &rarr;</a>
                     }
-                    @*TODO: if (this.User.IsInRole("Administrator"))*@
-                    @if (this.User.Identity.IsAuthenticated)
+
+
+                    @if (this.User.IsInRole("Administrator"))
                     {
-                        <a class="btn btn-primary float-left" asp-area="" asp-controller="Quotes" asp-action="All"> Всички цитати &rarr;</a>
-                        <a class="btn btn-primary float-right" asp-area="" asp-controller="BlogPosts" asp-action="All">Всички публикации &rarr;</a>
+                        <a class="btn btn-primary float-left" asp-area="" asp-controller="BlogPosts" asp-action="All"> Публикации &rarr;</a>
+                        <a class="btn btn-primary float-left" asp-area="" asp-controller="BlogPosts" asp-action="Create">Добави &rarr;</a>
+
+                        <a class="btn btn-secondary float-right" asp-area="" asp-controller="Quotes" asp-action="Create">Добави &rarr;</a>
+                        <a class="btn btn-secondary float-right" asp-area="" asp-controller="Quotes" asp-action="All">Цитати &rarr;</a>
+                    }
+
+                    @if (this.User.Identity.IsAuthenticated && !this.User.IsInRole("Administrator"))
+                    {
+
+                        <a class="btn btn-primary float-left" asp-area="" asp-controller="PlannedTasks" asp-action="Schedule">График &rarr;</a>
+                        <a class="btn btn-primary float-left" asp-area="" asp-controller="PlannedTasks" asp-action="Create"> Нова задача &rarr;</a>
+
+                        <a class="btn btn-secondary float-right" asp-area="" asp-controller="Notes" asp-action="Create">Нова бележка &rarr;</a>
+                        <a class="btn btn-secondary float-right" asp-area="" asp-controller="Notes" asp-action="All">Бележки &rarr;</a>
                     }
                 </div>
             </div>

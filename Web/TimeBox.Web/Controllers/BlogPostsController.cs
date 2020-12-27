@@ -28,17 +28,15 @@
             this.environment = environment;
         }
 
-        // TODO: [Authorize(Roles = "Administrator")]
-        [Authorize]
+        [Authorize(Roles = "Administrator")]
         public IActionResult Create()
         {
             var viewModel = new CreateBlogPostInputModel();
             return this.View(viewModel);
         }
 
-        // TODO: [Authorize(Roles = "Administrator")]
         [HttpPost]
-        [Authorize]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Create(CreateBlogPostInputModel input)
         {
             if (!this.ModelState.IsValid)

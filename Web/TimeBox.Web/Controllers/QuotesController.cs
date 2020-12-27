@@ -16,7 +16,7 @@
             this.quotesService = quotesService;
         }
 
-        [Authorize]
+        [Authorize(Roles = "Administrator")]
         public IActionResult Create()
         {
             var viewModel = new CreateQuoteInputModel();
@@ -24,7 +24,7 @@
         }
 
         [HttpPost]
-        [Authorize]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Create(CreateQuoteInputModel input)
         {
             if (!this.ModelState.IsValid)

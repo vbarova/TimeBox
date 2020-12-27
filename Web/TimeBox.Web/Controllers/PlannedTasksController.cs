@@ -25,7 +25,6 @@
             this.userManager = userManager;
         }
 
-        // TODO: [Authorize(Roles = "User")]
         [Authorize]
         public IActionResult Create()
         {
@@ -34,7 +33,6 @@
             return this.View(viewModel);
         }
 
-        // TODO: [Authorize(Roles = "User")]
         [HttpPost]
         [Authorize]
         public async Task<IActionResult> Create(CreatePlannedTaskInputModel input)
@@ -48,8 +46,12 @@
             var user = await this.userManager.GetUserAsync(this.User);
             await this.plannedTasksService.CreateAsync(input, user.Id);
 
-            // TODO: Redirect to planned task details page
-            return this.Redirect("/");
+            return this.Redirect("/PlannedTasks/Schedule");
+        }
+
+        public IActionResult Schedule()
+        {
+            return this.View();
         }
     }
 }

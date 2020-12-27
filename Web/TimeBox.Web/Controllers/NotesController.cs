@@ -22,7 +22,6 @@
             this.userManager = userManager;
         }
 
-        // TODO: [Authorize(Roles = "User")]
         [Authorize]
         public IActionResult Create()
         {
@@ -30,7 +29,6 @@
             return this.View(viewModel);
         }
 
-        // TODO: [Authorize(Roles = "User")]
         [HttpPost]
         [Authorize]
 
@@ -44,8 +42,7 @@
             var user = await this.userManager.GetUserAsync(this.User);
             await this.notesService.CreateAsync(input, user.Id);
 
-            // TODO: Redirect to list of notes page
-            return this.Redirect("/");
+            return this.Redirect("/notes/all");
         }
 
         public async Task<IActionResult> AllAsync()

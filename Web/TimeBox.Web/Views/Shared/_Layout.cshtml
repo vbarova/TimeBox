@@ -25,30 +25,10 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Начало</a>
                         </li>
-                        @* TODO: if (this.User.IsInRole("User"))*@
-                        @if (this.User.Identity.IsAuthenticated)
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="PlannedTasks" asp-action="Create">Нова задача</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Notes" asp-action="Create">Добави бележка</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Notes" asp-action="All">Всички бележки</a>
-                            </li>
-                        }
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">За TimeBox</a>
+                        </li>
 
-                        @* TODO: if (this.User.IsInRole("Administrator"))*@
-                        @if (this.User.Identity.IsAuthenticated)
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="BlogPosts" asp-action="Create">Добави публикация</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Quotes" asp-action="Create">Добави цитат</a>
-                            </li>
-                        }
                     </ul>
                 </div>
             </div>
@@ -66,7 +46,6 @@
         <div class="container">
             &copy; @DateTime.Now.Year @GlobalConstants.SystemName -
             <a asp-area="" asp-controller="Home" asp-action="Privacy">Поверителност</a>
-            <a asp-area="" asp-controller="Home" asp-action="About">За TimeBox</a>
         </div>
     </footer>
 
