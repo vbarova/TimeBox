@@ -1,7 +1,8 @@
-﻿@model IEnumerable<TimeBox.Data.Models.Category>
+﻿
+@model IEnumerable<TimeBox.Data.Models.Quote>
 
 @{
-    ViewData["Title"] = "Категории";
+    ViewData["Title"] = "Index";
 }
 
 <head>
@@ -28,19 +29,22 @@
 
 <body>
     <p>
-        <a class="btn btn-primary float-left" asp-action="Create"> Създай нова категория &rarr;</a>
+        <a class="btn btn-primary float-left" asp-action="Create">Добави нов цитат</a>
     </p>
     <table class="table">
         <thead>
             <tr>
                 <th>
-                    Заглавие
+                    Цитат
                 </th>
                 <th>
-                    Изтрита
+                    Автор
                 </th>
                 <th>
-                    Създадена
+                    Изтрит
+                </th>
+                <th>
+                    Създаден
                 </th>
                 <th>
                     Промяна
@@ -53,7 +57,10 @@
             {
                 <tr>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Name)
+                        @Html.DisplayFor(modelItem => item.QuoteText)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuoteAuthor)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.DeletedOn)
@@ -67,7 +74,7 @@
                     <td>
                         <a asp-action="Edit" asp-route-id="@item.Id">Редактирай</a> |
                         <a asp-action="Details" asp-route-id="@item.Id">Детайли</a> |
-                        <a class="alert-danger"  asp-action="Delete" asp-route-id="@item.Id">Изтрий</a>
+                        <a class="alert-danger" asp-action="Delete" asp-route-id="@item.Id">Изтрий</a>
                     </td>
                 </tr>
             }

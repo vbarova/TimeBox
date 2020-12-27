@@ -1,9 +1,8 @@
 ﻿namespace TimeBox.Web.Areas.Administration.Controllers
 {
+    using Microsoft.AspNetCore.Mvc;
     using TimeBox.Services.Data;
     using TimeBox.Web.ViewModels.Administration.Dashboard;
-
-    using Microsoft.AspNetCore.Mvc;
 
     public class DashboardController : AdministrationController
     {
@@ -18,6 +17,11 @@
         {
             var viewModel = new IndexViewModel { SettingsCount = this.settingsService.GetCount(), };
             return this.View(viewModel);
+        }
+
+        public IActionResult AllAdminActions()
+        {
+            return this.View();
         }
     }
 }

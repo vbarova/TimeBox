@@ -25,10 +25,12 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Начало</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">За TimeBox</a>
-                        </li>
-
+                        @if (this.User.IsInRole("Administrator"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="administration" asp-controller="Dashboard" asp-action="AllAdminActions">Админ панел</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>

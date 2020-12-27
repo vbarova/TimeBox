@@ -566,3 +566,9 @@ C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Deb
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administration\Views\Categories\Edit.cshtml.g.cs
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administration\Views\Categories\Index.cshtml.g.cs
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administration\Views\Dashboard\AllAdminActions.cshtml.g.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administration\Views\Quotes\Create.cshtml.g.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administration\Views\Quotes\Delete.cshtml.g.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administration\Views\Quotes\Details.cshtml.g.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administration\Views\Quotes\Edit.cshtml.g.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administration\Views\Quotes\Index.cshtml.g.cs
