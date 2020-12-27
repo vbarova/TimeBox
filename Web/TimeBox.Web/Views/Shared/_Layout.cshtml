@@ -14,7 +14,7 @@
         <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <img src="~/images/design/timebox-logo.png" alt="logo" />
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" url('images/design/home-bg.jpg')></a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" url('images /design/home-bg.jpg')></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,6 +29,12 @@
                         {
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="administration" asp-controller="Dashboard" asp-action="AllAdminActions">Админ панел</a>
+                            </li>
+                        }
+                        @if (this.User.Identity.IsAuthenticated && !this.User.IsInRole("Administrator"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="SelfCare" asp-action="SelfCare">С грижа за себе си</a>
                             </li>
                         }
                     </ul>

@@ -68,6 +68,7 @@
             services.AddTransient<INotesService, NotesService>();
             services.AddTransient<IBlogPostsService, BlogPostsService>();
             services.AddTransient<IQuotesService, QuotesService>();
+            services.AddTransient<ISelfCareService, SelfCareService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
