@@ -39,7 +39,7 @@
         {
             var plannedTasks = this.plannedTasksRepository.AllAsNoTracking()
                 .Where(x => x.CreatedByUser == user)
-                .Where(x => x.IsDone == false && x.Date > DateTime.Now)
+                .Where(x => x.IsDone == false && x.StartTime >= DateTime.Now)
                 .OrderBy(x => x.Date)
                 .ThenBy(x => x.StartTime)
                 .Select(x => new PlannedTaskInListViewModel
@@ -53,7 +53,7 @@
             return plannedTasks;
         }
 
-        public PlannedTaskDetailsViewModel GetById(ApplicationUser user, int id)
+        public PlannedTaskDetailsViewModel ById(ApplicationUser user, int id)
         {
             var plannedTask = this.plannedTasksRepository
                .AllAsNoTracking()

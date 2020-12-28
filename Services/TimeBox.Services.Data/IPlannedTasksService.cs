@@ -11,6 +11,6 @@
 
         IEnumerable<PlannedTaskInListViewModel> GetAll(ApplicationUser user);
 
-        PlannedTaskDetailsViewModel GetById(ApplicationUser user, int id);
+        PlannedTaskDetailsViewModel ById(ApplicationUser user, int id);
     }
 }

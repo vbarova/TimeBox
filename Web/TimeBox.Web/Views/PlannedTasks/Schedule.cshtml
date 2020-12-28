@@ -64,7 +64,7 @@
                         <p class="card-text">Час: @plannedTask.StartTime.ToShortTimeString()</p>
                         <p />
                         <div>
-                            <a class="btn btn-primary" asp-area="" asp-controller="PlannedTasks" asp-action="ByIdAsync">Детайли</a>
+                            <a class="btn btn-primary" a asp-action="ById" asp-route-id="@plannedTask.Id">Детайли</a>
                         </div>
                     </div>
                 </a>

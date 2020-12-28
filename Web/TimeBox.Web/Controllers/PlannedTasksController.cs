@@ -64,7 +64,7 @@
         public async Task<IActionResult> ByIdAsync(int id)
         {
             var user = await this.userManager.GetUserAsync(this.User);
-            var plannedTask = this.plannedTasksService.GetById(user, id);
+            var plannedTask = this.plannedTasksService.ById(user, id);
             return this.View(plannedTask);
         }
     }
