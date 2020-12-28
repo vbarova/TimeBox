@@ -67,5 +67,28 @@
             var plannedTask = this.plannedTasksService.ById(user, id);
             return this.View(plannedTask);
         }
+
+        [Authorize]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var user = await this.userManager.GetUserAsync(this.User);
+            var inputModel = this.plannedTasksService.EditById(user, id);
+            inputModel.CategoriesItems = this.categoriesService.GetAllAsKeyValuePairs();
+            return this.View(inputModel);
+        }
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> Edit(int id, EditPlannedTaskInputModel input)
+        {
+            if (!this.ModelState.IsValid)
+            {
+                input.CategoriesItems = this.categoriesService.GetAllAsKeyValuePairs();
+                return this.View(input);
+            }
+
+            await this.plannedTasksService.UpdateAsync(id, input);
+            return this.Redirect("/PlannedTasks/Schedule");
+        }
     }
 }

@@ -573,3 +573,14 @@ C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Deb
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\SelfCare\SelfCare.cshtml.g.cs
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\images\design\home.jpg
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\PlannedTasks\ById.cshtml.g.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\images\design\about.png
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\images\design\category-family.png
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\images\design\category-personal.png
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\images\design\category-sport.png
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\images\design\category-study.png
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\images\design\category-work.png
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\images\design\home-user.png
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\images\design\planned-tasks-details.png
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\images\design\schedule.png
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\images\design\self-care.png
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\PlannedTasks\Edit.cshtml.g.cs

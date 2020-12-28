@@ -613,3 +613,13 @@ C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\bin\Debug\netcoreapp3.1\wwwroot\images\design\home.jpg
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\bin\Debug\netcoreapp3.1\wwwroot\images\design\about.png
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\bin\Debug\netcoreapp3.1\wwwroot\images\design\category-family.png
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\bin\Debug\netcoreapp3.1\wwwroot\images\design\category-personal.png
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\bin\Debug\netcoreapp3.1\wwwroot\images\design\category-sport.png
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\bin\Debug\netcoreapp3.1\wwwroot\images\design\category-study.png
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\bin\Debug\netcoreapp3.1\wwwroot\images\design\category-work.png
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\bin\Debug\netcoreapp3.1\wwwroot\images\design\home-user.png
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\bin\Debug\netcoreapp3.1\wwwroot\images\design\planned-tasks-details.png
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\bin\Debug\netcoreapp3.1\wwwroot\images\design\schedule.png
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Tests\TimeBox.Web.Tests\bin\Debug\netcoreapp3.1\wwwroot\images\design\self-care.png

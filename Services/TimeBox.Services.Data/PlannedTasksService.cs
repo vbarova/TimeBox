@@ -75,5 +75,40 @@
                .FirstOrDefault();
             return plannedTask;
         }
+
+        public EditPlannedTaskInputModel EditById(ApplicationUser user, int id)
+        {
+            var plannedTaskToEdit = this.plannedTasksRepository
+               .AllAsNoTracking()
+               .Where(x => x.CreatedByUser == user)
+               .Where(x => x.Id == id)
+               .Select(x => new EditPlannedTaskInputModel
+               {
+                   Id = x.Id,
+                   Title = x.Title,
+                   Date = x.Date,
+                   StartTime = x.StartTime,
+                   EndTime = x.EndTime,
+                   Description = x.Description,
+                   IsDone = x.IsDone,
+                   CategoryId = x.CategoryId,
+               })
+               .ToList()
+               .FirstOrDefault();
+            return plannedTaskToEdit;
+        }
+
+        public async Task UpdateAsync(int id, EditPlannedTaskInputModel input)
+        {
+            var plannedTasks = this.plannedTasksRepository.All().FirstOrDefault(x => x.Id == id);
+            plannedTasks.Title = input.Title;
+            plannedTasks.Date = input.Date;
+            plannedTasks.StartTime = input.StartTime;
+            plannedTasks.EndTime = input.EndTime;
+            plannedTasks.CategoryId = input.CategoryId;
+            plannedTasks.Description = input.Description;
+            plannedTasks.IsDone = input.IsDone;
+            await this.plannedTasksRepository.SaveChangesAsync();
+        }
     }
 }
