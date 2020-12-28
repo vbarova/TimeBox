@@ -50,6 +50,9 @@
     <div class="clearfix">
         <a class="btn btn-primary float-right" asp-action="Schedule">Обратно към графика &rarr;</a>
         <a class="btn btn-secondary float-left" asp-action="Edit" asp-route-id="@Model.Id">Редактирай &rarr;</a>
+        <form asp-action="Delete" asp-route-id="@Model.Id">
+        <button class="btn btn-danger float-left">Изтрий &rarr;</button>
+        </form>
     </div>
 
 </body>

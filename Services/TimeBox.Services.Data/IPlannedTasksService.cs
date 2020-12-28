@@ -17,5 +17,7 @@
         EditPlannedTaskInputModel EditById(ApplicationUser user, int id);
 
         Task UpdateAsync(int id, EditPlannedTaskInputModel input);
+
+        Task DeleteAsync(int id);
     }
 }

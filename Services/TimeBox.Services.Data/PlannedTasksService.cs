@@ -112,5 +112,12 @@
             plannedTasks.IsDone = input.IsDone;
             await this.plannedTasksRepository.SaveChangesAsync();
         }
+
+        public async Task DeleteAsync(int id)
+        {
+            var plannedTask = this.plannedTasksRepository.All().FirstOrDefault(x => x.Id == id);
+            this.plannedTasksRepository.Delete(plannedTask);
+            await this.plannedTasksRepository.SaveChangesAsync();
+        }
     }
 }

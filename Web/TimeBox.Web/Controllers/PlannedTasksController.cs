@@ -94,5 +94,14 @@
             await this.plannedTasksService.UpdateAsync(id, input);
             return this.Redirect("/PlannedTasks/Schedule");
         }
+
+        [HttpPost]
+        [Authorize]
+
+        public async Task<IActionResult> Delete(int id)
+        {
+            await this.plannedTasksService.DeleteAsync(id);
+            return this.Redirect("/PlannedTasks/Schedule");
+        }
     }
 }
