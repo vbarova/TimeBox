@@ -46,5 +46,14 @@
 
             return this.View(viewModel);
         }
+
+        [HttpPost]
+        [Authorize(Roles = "Administrator")]
+
+        public async Task<IActionResult> Delete(int id)
+        {
+            await this.quotesService.DeleteAsync(id);
+            return this.Redirect("/Quotes/All");
+        }
     }
 }

@@ -32,18 +32,22 @@
     @foreach (var quote in this.Model.Quotes)
     {
 
-        <div class="post-preview">
+        <div>
             <a asp-action="ById" asp-route-id="@quote.Id">
-                <h3 class="post-title">
+                <h4 class="post-title">
                     "@quote.QuoteText"
-                </h3>
-                <h5 class="post-subtitle">
+                </h4>
+                <h6 class="post-subtitle">
                     @quote.QuoteAuthor
-                </h5>
+                </h6>
             </a>
         </div>
-        <hr>
-
+        <form asp-action="Delete" asp-route-id="@quote.Id">
+            <button class="btn btn-danger float-left">Изтрий &rarr;</button>
+        </form>
+        <br />
+        <br />
+        <hr />
     }
 
 </body>

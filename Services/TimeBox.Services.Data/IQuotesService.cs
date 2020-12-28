@@ -10,5 +10,7 @@
         Task CreateAsync(CreateQuoteInputModel input);
 
         IEnumerable<QuoteInListViewModel> GetAll();
+
+        Task DeleteAsync(int id);
     }
 }

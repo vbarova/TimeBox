@@ -44,5 +44,12 @@
                 .ToList();
             return quotes;
         }
+
+        public async Task DeleteAsync(int id)
+        {
+            var quote = this.quotesRepository.All().FirstOrDefault(x => x.Id == id);
+            this.quotesRepository.Delete(quote);
+            await this.quotesRepository.SaveChangesAsync();
+        }
     }
 }
