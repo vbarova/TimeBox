@@ -5,6 +5,7 @@
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
+    using TimeBox.Data;
     using TimeBox.Data.Models;
     using TimeBox.Services.Data;
     using TimeBox.Web.ViewModels.PlannedTask;
@@ -14,15 +15,18 @@
         private readonly ICategoriesService categoriesService;
         private readonly IPlannedTasksService plannedTasksService;
         private readonly UserManager<ApplicationUser> userManager;
+        private readonly ApplicationDbContext db;
 
         public PlannedTasksController(
             ICategoriesService categoriesService,
             IPlannedTasksService plannedTasksService,
-            UserManager<ApplicationUser> userManager)
+            UserManager<ApplicationUser> userManager,
+            ApplicationDbContext db)
         {
             this.categoriesService = categoriesService;
             this.plannedTasksService = plannedTasksService;
             this.userManager = userManager;
+            this.db = db;
         }
 
         [Authorize]

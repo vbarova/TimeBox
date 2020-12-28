@@ -4,7 +4,7 @@
 
     using TimeBox.Data.Common.Models;
 
-    public class PlannedTask : BaseModel<int>
+    public class PlannedTask : BaseDeletableModel<int>
     {
         public string Title { get; set; }
 

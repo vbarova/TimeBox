@@ -5,15 +5,17 @@
     using System.Linq;
     using System.Threading.Tasks;
 
+    using Microsoft.EntityFrameworkCore;
     using TimeBox.Data.Common.Repositories;
     using TimeBox.Data.Models;
     using TimeBox.Web.ViewModels.PlannedTask;
 
     public class PlannedTasksService : IPlannedTasksService
     {
-        private readonly IRepository<PlannedTask> plannedTasksRepository;
+        private readonly IDeletableEntityRepository<PlannedTask> plannedTasksRepository;
 
-        public PlannedTasksService(IRepository<PlannedTask> plannedTasksRepository)
+        public PlannedTasksService(
+            IDeletableEntityRepository<PlannedTask> plannedTasksRepository)
         {
             this.plannedTasksRepository = plannedTasksRepository;
         }
@@ -39,13 +41,13 @@
         {
             var plannedTasks = this.plannedTasksRepository.AllAsNoTracking()
                 .Where(x => x.CreatedByUser == user)
-                .Where(x => x.IsDone == false && x.StartTime >= DateTime.Now)
+                .Where(x => x.IsDone == false)
                 .OrderBy(x => x.Date)
                 .ThenBy(x => x.StartTime)
                 .Select(x => new PlannedTaskInListViewModel
                 {
                     Id = x.Id,
-                    Title = x.Title.Substring(0, 15),
+                    Title = x.Title.Substring(0, 12),
                     Date = x.Date,
                     StartTime = x.StartTime,
                 })

@@ -6,7 +6,7 @@
 
     using TimeBox.Data.Common.Models;
 
-    public class Note : BaseModel<int>
+    public class Note : BaseDeletableModel<int>
     {
         public string Title { get; set; }
 
