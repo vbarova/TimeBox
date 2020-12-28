@@ -26,69 +26,91 @@
 </head>
 
 <body>
-
+    @if (!this.User.Identity.IsAuthenticated)
+    {
         <!-- Page Header -->
-    <header class="masthead" style="background-image: url('images/design/home-bg.jpg')">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                    <div class="site-heading">
-                        <h1>TimeBox</h1>
-                        <span class="subheading">Ако не е в TimeBox, значи не съществува</span>
+        <header class="masthead" style="background-image: url('images/design/home.jpg')">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8 col-md-10 mx-auto">
+                        <div class="site-heading">
+                            <h1>TimeBox</h1>
+                            <span class="subheading">Ако не е в TimeBox, значи не съществува</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    
-        <!-- Main Content -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                    <div class="post-preview">
-                        <a>
-                            @if (!this.User.Identity.IsAuthenticated)
-                            {<h2 class="post-title" asp-controller="BlogPosts" asp-action="Newest">
-                                    Идеи за вдъхновение
-                                </h2>
-                                <h3 class="post-subtitle" asp-controller="BlogPosts" asp-action="Newest">
-                                    Как ефективно да управляваш времто си и да балансираш между задачите и любимите си занимания? Открий идеи, съвети и вдъхновение в блога на TimeBox.
-                                </h3>
-                            }
-                        </a>
+        </header>
+    }
+    @if (this.User.Identity.IsAuthenticated && !this.User.IsInRole("Administrator"))
+    {
+        <!-- Page Header -->
+        <header class="masthead" style="background-image: url('images/design/home-user.png')">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8 col-md-10 mx-auto">
+                        <div class="site-heading">
+                            <h2>Планирай с TimeBox</h2>
+                            <span class="subheading">Отбелязвай своите предстоящи и изпълнени задачи и организирай времето си. Ако нещо не е в твоя TimeBox, значи просто не съществува. :)</span>
+                        </div>
                     </div>
-                    <!-- See all -->
-                    <div class="clearfix">
+                </div>
+            </div>
+        </header>
+    }
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="post-preview">
+                    <a>
                         @if (!this.User.Identity.IsAuthenticated)
-                        {
-                            <a class="btn btn-primary float-left" asp-area="" asp-controller="BlogPosts" asp-action="Create"> Защо TimeBox &rarr;</a>
-                            <a class="btn btn-primary float-right" asp-area="" asp-controller="BlogPosts" asp-action="All">Виж всички публикации &rarr;</a>
+                        {<h2 class="post-title" asp-controller="BlogPosts" asp-action="Newest">
+                                Идеи за вдъхновение
+                            </h2>
+                            <h3 class="post-subtitle" asp-controller="BlogPosts" asp-action="Newest">
+                                Как ефективно да управляваш времто си и да балансираш между задачите и любимите си занимания? Открий идеи, съвети и вдъхновение в блога на TimeBox.
+                            </h3>
                         }
+                    </a>
+                </div>
+                <hr/>
+                <!-- See all -->
+                <div class="clearfix">
+                    @if (!this.User.Identity.IsAuthenticated)
+                    {
+                        <a class="btn btn-primary float-left" asp-area="" asp-controller="Home" asp-action="About"> Защо TimeBox &rarr;</a>
+                        <a class="btn btn-primary float-right" asp-area="" asp-controller="BlogPosts" asp-action="All">Виж всички публикации &rarr;</a>
+                    }
 
 
-                        @if (this.User.IsInRole("Administrator"))
-                        {
-                            <a class="btn btn-primary float-left" asp-area="" asp-controller="BlogPosts" asp-action="All"> Публикации &rarr;</a>
-                            <a class="btn btn-primary float-left" asp-area="" asp-controller="BlogPosts" asp-action="Create">Добави &rarr;</a>
+                    @if (this.User.IsInRole("Administrator"))
+                    {
+                        <a class="btn btn-primary float-left" asp-area="" asp-controller="BlogPosts" asp-action="All"> Публикации &rarr;</a>
+                        <a class="btn btn-primary float-left" asp-area="" asp-controller="BlogPosts" asp-action="Create">Добави &rarr;</a>
 
-                            <a class="btn btn-secondary float-right" asp-area="" asp-controller="Quotes" asp-action="Create">Добави &rarr;</a>
-                            <a class="btn btn-secondary float-right" asp-area="" asp-controller="Quotes" asp-action="All">Цитати &rarr;</a>
-                        }
+                        <a class="btn btn-secondary float-right" asp-area="" asp-controller="Quotes" asp-action="Create">Добави &rarr;</a>
+                        <a class="btn btn-secondary float-right" asp-area="" asp-controller="Quotes" asp-action="All">Цитати &rarr;</a>
+                    }
 
-                        @if (this.User.Identity.IsAuthenticated && !this.User.IsInRole("Administrator"))
-                        {
+                    @if (this.User.Identity.IsAuthenticated && !this.User.IsInRole("Administrator"))
+                    {
 
-                            <a class="btn btn-primary float-left" asp-area="" asp-controller="PlannedTasks" asp-action="Schedule">График &rarr;</a>
-                            <a class="btn btn-primary float-left" asp-area="" asp-controller="PlannedTasks" asp-action="Create"> Нова задача &rarr;</a>
+                        <a class="btn btn-primary float-left" asp-area="" asp-controller="PlannedTasks" asp-action="Schedule">График &rarr;</a>
+                        <a class="btn btn-primary float-left" asp-area="" asp-controller="PlannedTasks" asp-action="Create"> Нова задача &rarr;</a>
 
-                            <a class="btn btn-secondary float-right" asp-area="" asp-controller="Notes" asp-action="Create">Нова бележка &rarr;</a>
-                            <a class="btn btn-secondary float-right" asp-area="" asp-controller="Notes" asp-action="All">Бележки &rarr;</a>
-                        }
-                    </div>
+                        <a class="btn btn-secondary float-right" asp-area="" asp-controller="Notes" asp-action="Create">Нова бележка &rarr;</a>
+                        <a class="btn btn-secondary float-right" asp-area="" asp-controller="Notes" asp-action="All">Бележки &rarr;</a>
+                    }
                 </div>
             </div>
         </div>
+    </div>
 
-    </body>
+</body>
 

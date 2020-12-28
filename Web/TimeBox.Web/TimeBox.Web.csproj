@@ -51,10 +51,7 @@
     <Content Update="wwwroot\favicon-32x32.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\design\about-bg.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Update="wwwroot\images\design\home-bg.jpg">
+    <Content Update="wwwroot\images\design\home.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Update="wwwroot\images\design\timebox-logo.png">

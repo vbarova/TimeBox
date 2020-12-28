@@ -464,8 +464,6 @@ C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Deb
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\BlogPosts\Create.cshtml.g.cs
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\Quotes\Create.cshtml.g.cs
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\BlogPosts\All.cshtml.g.cs
-C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\images\design\about-bg.jpg
-C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\images\design\home-bg.jpg
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\favicon-32x32.png
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\lib\jquery-validation\dist\jquery.validate.js
@@ -573,3 +571,4 @@ C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Deb
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administration\Views\Quotes\Edit.cshtml.g.cs
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administration\Views\Quotes\Index.cshtml.g.cs
 C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\SelfCare\SelfCare.cshtml.g.cs
+C:\Users\Velina\source\repos\SoftUni\My projects\TimeBox\Web\TimeBox.Web\bin\Debug\netcoreapp3.1\wwwroot\images\design\home.jpg

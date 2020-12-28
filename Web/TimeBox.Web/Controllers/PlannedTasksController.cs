@@ -49,9 +49,23 @@
             return this.Redirect("/PlannedTasks/Schedule");
         }
 
-        public IActionResult Schedule()
+        public async Task<IActionResult> ScheduleAsync()
         {
-            return this.View();
+            var user = await this.userManager.GetUserAsync(this.User);
+
+            var plannedTasks = new PlannedTasksListViewModel
+            {
+                PlannedTasks = this.plannedTasksService.GetAll(user),
+            };
+
+            return this.View(plannedTasks);
+        }
+
+        public async Task<IActionResult> ByIdAsync(int id)
+        {
+            var user = await this.userManager.GetUserAsync(this.User);
+            var plannedTask = this.plannedTasksService.GetById(user, id);
+            return this.View(plannedTask);
         }
     }
 }

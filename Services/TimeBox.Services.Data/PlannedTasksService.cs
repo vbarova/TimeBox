@@ -1,6 +1,8 @@
 ﻿namespace TimeBox.Services.Data
 {
     using System;
+    using System.Collections.Generic;
+    using System.Linq;
     using System.Threading.Tasks;
 
     using TimeBox.Data.Common.Repositories;
@@ -31,6 +33,48 @@
 
             await this.plannedTasksRepository.AddAsync(plannedTask);
             await this.plannedTasksRepository.SaveChangesAsync();
+        }
+
+        public IEnumerable<PlannedTaskInListViewModel> GetAll(ApplicationUser user)
+        {
+            var plannedTasks = this.plannedTasksRepository.AllAsNoTracking()
+                .Where(x => x.CreatedByUser == user)
+                .Where(x => x.IsDone == false)
+                .OrderByDescending(x => x.Date)
+                .ThenBy(x => x.StartTime)
+                .ThenBy(x => x.EndTime)
+                .Select(x => new PlannedTaskInListViewModel
+                {
+                    Id = x.Id,
+                    Title = x.Title,
+                    Date = x.Date,
+                    StartTime = x.StartTime,
+                })
+                .ToList();
+            return plannedTasks;
+        }
+
+        public PlannedTaskDetailsViewModel GetById(ApplicationUser user, int id)
+        {
+            var plannedTask = this.plannedTasksRepository
+               .AllAsNoTracking()
+               .Where(x => x.CreatedByUser == user)
+               .Where(x => x.Id == id)
+               .Select(x => new PlannedTaskDetailsViewModel
+               {
+                   Id = x.Id,
+                   Title = x.Title,
+                   Date = x.Date,
+                   StartTime = x.StartTime,
+                   EndTime = x.EndTime,
+                   Description = x.Description,
+                   IsDone = x.IsDone,
+                   CategoryId = x.CategoryId,
+                   Category = x.Category,
+               })
+               .ToList()
+               .FirstOrDefault();
+            return plannedTask;
         }
     }
 }

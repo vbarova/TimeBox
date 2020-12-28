@@ -1,1 +1,97 @@
-﻿
+﻿@model TimeBox.Web.ViewModels.PlannedTask.PlannedTasksListViewModel
+@{
+    this.ViewData["Title"] = "Публикации";
+}
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>@this.ViewData["Title"]</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        /*-- featured-services --*/
+        .featured-services-grd {
+            text-align: center;
+            box-shadow: 1px 1px 2px #0085a1;
+            padding: 2em 1em;
+        }
+
+            .featured-services-grd h4 {
+                text-transform: capitalize;
+                font-size: 1.3em;
+                color: #0085a1;
+                margin: 1em 0;
+            }
+
+            .featured-services-grd p {
+                font-size: 14px;
+                color: #999;
+                line-height: 1.8em;
+                margin: 0 0 2em;
+            }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('/images/design/schedule.png')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <h2>Твоят график</h2>
+                        <span class="subheading">Започни деня си с чаша кафе и преглед на задачите</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section>
+        @foreach (var plannedTask in this.Model.PlannedTasks)
+        {
+            <div style="width: 250px; float:left; height:250px; margin:5px">
+                <div>
+                    <a asp-action="ById" asp-route-id="@plannedTask.Id">
+                        <div class="container">
+                            <div>
+                                <div class="col-md-3 featured-services-grid">
+                                    <div class="featured-services-grd">
+                                        <span aria-hidden="true"></span>
+                                        <h4>@plannedTask.Title</h4>
+                                        <p>Дата: @plannedTask.Date.ToString("dd/MM/yyyy")</p>
+                                        <p>Час: @plannedTask.StartTime.ToShortTimeString()</p>
+                                        <div>
+                                            <a class="btn btn-secondary" asp-area="" asp-controller="PlannedTasks" asp-action="ByIdAsync">Детайли</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        }
+</section>
+
+</body>
