@@ -5,11 +5,6 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
     <title>@this.ViewData["Title"]</title>
 
     <!-- Bootstrap core CSS -->
@@ -59,8 +54,14 @@
 
     <hr>
     <!-- See all -->
-    <div class="clearfix">
-        <a class="btn btn-primary float-right" asp-area="" asp-controller="BlogPosts" asp-action="All">Виж всички публикации &rarr;</a>
-    </div>
-
+    @if(this.User.IsInRole("Administrator"))
+    { 
+<div class="clearfix">
+    <a class="btn btn-secondary float-right" asp-area="" asp-controller="BlogPosts" asp-action="All">Всички публикации &rarr;</a>
+    <a class="btn btn-secondary float-left" href="/BlogPosts/Edit/@Model.Id">Редактирай &rarr;</a>
+    <form action="/BlogPosts/Delete/@Model.Id" method="post">
+        <button class="btn btn-danger float-left">Изтрий &rarr;</button>
+    </form>
+</div>
+    }
 </body>

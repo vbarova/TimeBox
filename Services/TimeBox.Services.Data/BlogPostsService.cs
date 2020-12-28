@@ -62,7 +62,7 @@
                 {
                     Id = x.Id,
                     Title = x.Title,
-                    BlogTextPreview = x.BlogText.Substring(0, 50),
+                    BlogText = x.BlogText.Substring(0, 50),
                     CreatedByUserName = x.CreatedByUser.Name,
                     CreatedOn = x.CreatedOn,
                 })
@@ -77,6 +77,7 @@
                 .Where(x => x.Id == id)
                 .Select(x => new BlogPostDetailsViewModel
                 {
+                    Id = x.Id,
                     Title = x.Title,
                     BlogText = x.BlogText,
                     Image = x.Images.FirstOrDefault(),
@@ -87,6 +88,38 @@
                 .ToList()
                 .FirstOrDefault();
             return blogPost;
+        }
+
+        public EditBlogPostInputModel EditById(ApplicationUser user, int id)
+        {
+            var blogPostToEdit = this.blogPostsRepository
+               .AllAsNoTracking()
+               .Where(x => x.CreatedByUser == user)
+               .Where(x => x.Id == id)
+               .Select(x => new EditBlogPostInputModel
+               {
+                   Id = x.Id,
+                   Title = x.Title,
+                   BlogText = x.BlogText,
+               })
+               .ToList()
+               .FirstOrDefault();
+            return blogPostToEdit;
+        }
+
+        public async Task UpdateAsync(int id, EditBlogPostInputModel input)
+        {
+            var blogPost = this.blogPostsRepository.All().FirstOrDefault(x => x.Id == id);
+            blogPost.Title = input.Title;
+            blogPost.BlogText = input.BlogText;
+            await this.blogPostsRepository.SaveChangesAsync();
+        }
+
+        public async Task DeleteAsync(int id)
+        {
+            var blogPost = this.blogPostsRepository.All().FirstOrDefault(x => x.Id == id);
+            this.blogPostsRepository.Delete(blogPost);
+            await this.blogPostsRepository.SaveChangesAsync();
         }
     }
 }

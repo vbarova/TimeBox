@@ -1,13 +1,13 @@
 ﻿namespace TimeBox.Web.ViewModels.BlogPost
 {
     using System;
-    using System.Linq;
 
-    using AutoMapper;
     using TimeBox.Data.Models;
 
     public class BlogPostDetailsViewModel
     {
+        public int Id { get; set; }
+
         public string Title { get; set; }
 
         public string BlogText { get; set; }

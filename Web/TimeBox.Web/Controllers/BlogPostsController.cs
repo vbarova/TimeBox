@@ -56,8 +56,7 @@
                 return this.View(input);
             }
 
-            // TODO: Redirect to all blogposts
-            return this.RedirectToAction("/");
+            return this.RedirectToAction("All");
         }
 
         public IActionResult All()
@@ -70,10 +69,40 @@
             return this.View(viewModel);
         }
 
-        public IActionResult ById(int id)
+        public async Task<IActionResult> ByIdAsync(int id)
         {
             var blogPost = this.blogPostsService.GetById(id);
             return this.View(blogPost);
+        }
+
+        [Authorize(Roles = "Administrator")]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var user = await this.userManager.GetUserAsync(this.User);
+            var inputModel = this.blogPostsService.EditById(user, id);
+            return this.View(inputModel);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Administrator")]
+        public async Task<IActionResult> Edit(int id, EditBlogPostInputModel input)
+        {
+            if (!this.ModelState.IsValid)
+            {
+                return this.View(input);
+            }
+
+            await this.blogPostsService.UpdateAsync(id, input);
+            return this.Redirect("/BlogPosts/All");
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Administrator")]
+
+        public async Task<IActionResult> Delete(int id)
+        {
+            await this.blogPostsService.DeleteAsync(id);
+            return this.Redirect("/BlogPosts/All");
         }
     }
 }

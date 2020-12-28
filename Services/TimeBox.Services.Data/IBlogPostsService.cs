@@ -14,5 +14,11 @@
         IEnumerable<BlogPostInListViewModel> GetAll();
 
         BlogPostDetailsViewModel GetById(int id);
+
+        EditBlogPostInputModel EditById(ApplicationUser user, int id);
+
+        Task UpdateAsync(int id, EditBlogPostInputModel input);
+
+        Task DeleteAsync(int id);
     }
 }

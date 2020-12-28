@@ -10,7 +10,7 @@
 
         public string Title { get; set; }
 
-        public string BlogTextPreview { get; set; }
+        public string BlogText { get; set; }
 
         public string CreatedByUserId { get; set; }
 

@@ -3,9 +3,8 @@ namespace TimeBox.Data.Models
 {
     using System;
 
-    using TimeBox.Data.Common.Models;
-
     using Microsoft.AspNetCore.Identity;
+    using TimeBox.Data.Common.Models;
 
     public class ApplicationRole : IdentityRole, IAuditInfo, IDeletableEntity
     {
