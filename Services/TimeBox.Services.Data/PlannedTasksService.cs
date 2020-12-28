@@ -39,14 +39,13 @@
         {
             var plannedTasks = this.plannedTasksRepository.AllAsNoTracking()
                 .Where(x => x.CreatedByUser == user)
-                .Where(x => x.IsDone == false)
-                .OrderByDescending(x => x.Date)
+                .Where(x => x.IsDone == false && x.Date > DateTime.Now)
+                .OrderBy(x => x.Date)
                 .ThenBy(x => x.StartTime)
-                .ThenBy(x => x.EndTime)
                 .Select(x => new PlannedTaskInListViewModel
                 {
                     Id = x.Id,
-                    Title = x.Title,
+                    Title = x.Title.Substring(0, 15),
                     Date = x.Date,
                     StartTime = x.StartTime,
                 })

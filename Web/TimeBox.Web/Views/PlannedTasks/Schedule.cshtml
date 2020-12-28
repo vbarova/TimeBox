@@ -20,32 +20,6 @@
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-    <!-- Custom styles for this template -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <style>
-        /*-- featured-services --*/
-        .featured-services-grd {
-            text-align: center;
-            box-shadow: 1px 1px 2px #0085a1;
-            padding: 2em 1em;
-        }
-
-            .featured-services-grd h4 {
-                text-transform: capitalize;
-                font-size: 1.3em;
-                color: #0085a1;
-                margin: 1em 0;
-            }
-
-            .featured-services-grd p {
-                font-size: 14px;
-                color: #999;
-                line-height: 1.8em;
-                margin: 0 0 2em;
-            }
-
-    </style>
 </head>
 
 <body>
@@ -65,33 +39,36 @@
         </div>
     </header>
 
+
     <!-- Main Content -->
-    <section>
+    <div class="overflow-auto">
         @foreach (var plannedTask in this.Model.PlannedTasks)
         {
-            <div style="width: 250px; float:left; height:250px; margin:5px">
-                <div>
-                    <a asp-action="ById" asp-route-id="@plannedTask.Id">
-                        <div class="container">
-                            <div>
-                                <div class="col-md-3 featured-services-grid">
-                                    <div class="featured-services-grd">
-                                        <span aria-hidden="true"></span>
-                                        <h4>@plannedTask.Title</h4>
-                                        <p>Дата: @plannedTask.Date.ToString("dd/MM/yyyy")</p>
-                                        <p>Час: @plannedTask.StartTime.ToShortTimeString()</p>
-                                        <div>
-                                            <a class="btn btn-secondary" asp-area="" asp-controller="PlannedTasks" asp-action="ByIdAsync">Детайли</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="clearfix"> </div>
-                            </div>
+            <div class="card col-3 featured-services-grid float-left" style="width: auto">
+                <a asp-action="ById" asp-route-id="@plannedTask.Id">
+                    <div class="card-body">
+                        @if (plannedTask.Title.Length > 10)
+                        {
+                            <h5 class="card-title">
+                                @plannedTask.Title ...
+                            </h5>
+                        }
+                        else
+                        {
+                            <h5 class="card-title">
+                                @plannedTask.Title
+                            </h5>
+                        }
+
+                        <p class="card-text">Дата: @plannedTask.Date.ToString("dd/MM/yyyy")</p>
+                        <p class="card-text">Час: @plannedTask.StartTime.ToShortTimeString()</p>
+                        <p />
+                        <div>
+                            <a class="btn btn-primary" asp-area="" asp-controller="PlannedTasks" asp-action="ByIdAsync">Детайли</a>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         }
-</section>
-
+    </div>
 </body>
