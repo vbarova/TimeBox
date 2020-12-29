@@ -1,5 +1,6 @@
 ﻿namespace TimeBox.Web.Controllers
 {
+    using System;
     using System.Threading.Tasks;
 
     using Microsoft.AspNetCore.Authorization;
@@ -42,6 +43,16 @@
             var user = await this.userManager.GetUserAsync(this.User);
             await this.notesService.CreateAsync(input, user.Id);
 
+            try
+            {
+                await this.notesService.CreateAsync(input, user.Id);
+            }
+            catch (Exception ex)
+            {
+                this.ModelState.AddModelError(string.Empty, ex.Message);
+                return this.View(input);
+            }
+
             return this.Redirect("/notes/all");
         }
 
@@ -59,6 +70,11 @@
 
         public async Task<IActionResult> Delete(int id)
         {
+            if (!this.notesService.Exists(id))
+            {
+                return this.RedirectToAction("NotFoundError", "Error");
+            }
+
             await this.notesService.DeleteAsync(id);
             return this.Redirect("/Notes/All");
         }

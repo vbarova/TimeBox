@@ -17,6 +17,11 @@
             this.quotesRepository = quotesRepository;
         }
 
+        public bool Exists(int id)
+        {
+            return this.quotesRepository.AllAsNoTracking().FirstOrDefault(x => x.Id == id) != null;
+        }
+
         public async Task CreateAsync(CreateQuoteInputModel input)
         {
             var quote = new Quote

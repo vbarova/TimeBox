@@ -1,5 +1,6 @@
 ﻿namespace TimeBox.Web.Controllers
 {
+    using System;
     using System.Threading.Tasks;
 
     using Microsoft.AspNetCore.Authorization;
@@ -34,6 +35,16 @@
 
             await this.quotesService.CreateAsync(input);
 
+            try
+            {
+                await this.quotesService.CreateAsync(input);
+            }
+            catch (Exception ex)
+            {
+                this.ModelState.AddModelError(string.Empty, ex.Message);
+                return this.View(input);
+            }
+
             return this.Redirect("/");
         }
 
@@ -52,6 +63,11 @@
 
         public async Task<IActionResult> Delete(int id)
         {
+            if (!this.quotesService.Exists(id))
+            {
+                return this.RedirectToAction("NotFoundError", "Error");
+            }
+
             await this.quotesService.DeleteAsync(id);
             return this.Redirect("/Quotes/All");
         }

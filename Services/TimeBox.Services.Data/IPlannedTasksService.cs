@@ -8,6 +8,8 @@
 
     public interface IPlannedTasksService
     {
+        bool Exists(int id);
+
         Task CreateAsync(CreatePlannedTaskInputModel input, string userId);
 
         IEnumerable<PlannedTaskInListViewModel> GetAll(ApplicationUser user);

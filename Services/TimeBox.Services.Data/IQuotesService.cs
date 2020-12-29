@@ -7,6 +7,8 @@
 
     public interface IQuotesService
     {
+        bool Exists(int id);
+
         Task CreateAsync(CreateQuoteInputModel input);
 
         IEnumerable<QuoteInListViewModel> GetAll();

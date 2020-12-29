@@ -17,6 +17,11 @@
             this.notesRepository = notesRepository;
         }
 
+        public bool Exists(int id)
+        {
+            return this.notesRepository.AllAsNoTracking().FirstOrDefault(x => x.Id == id) != null;
+        }
+
         public async Task CreateAsync(CreateNoteInputModel input, string userId)
         {
             var note = new Note

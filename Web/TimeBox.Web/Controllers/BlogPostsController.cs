@@ -72,6 +72,12 @@
         public async Task<IActionResult> ByIdAsync(int id)
         {
             var blogPost = this.blogPostsService.GetById(id);
+
+            if (this.ModelBinderFactory == null)
+            {
+                return this.RedirectToAction("NotFoundError", "Error");
+            }
+
             return this.View(blogPost);
         }
 
@@ -93,6 +99,12 @@
             }
 
             await this.blogPostsService.UpdateAsync(id, input);
+
+            if (input == null)
+            {
+                return this.RedirectToAction("NotFoundError", "Error");
+            }
+
             return this.Redirect("/BlogPosts/All");
         }
 
@@ -101,6 +113,11 @@
 
         public async Task<IActionResult> Delete(int id)
         {
+            if (!this.blogPostsService.Exists(id))
+            {
+                return this.RedirectToAction("NotFoundError", "Error");
+            }
+
             await this.blogPostsService.DeleteAsync(id);
             return this.Redirect("/BlogPosts/All");
         }

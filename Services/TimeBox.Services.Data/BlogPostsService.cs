@@ -20,6 +20,11 @@
             this.blogPostsRepository = blogPostsRepository;
         }
 
+        public bool Exists(int id)
+        {
+            return this.blogPostsRepository.AllAsNoTracking().FirstOrDefault(x => x.Id == id) != null;
+        }
+
         public async Task CreateBlogPostAsync(CreateBlogPostInputModel input, string userId, string imagePath)
         {
             var blogPost = new BlogPost

@@ -42,33 +42,46 @@
 
     <!-- Main Content -->
     <div class="overflow-auto">
-        @foreach (var plannedTask in this.Model.PlannedTasks)
-        {
-            <div class="card col-3 featured-services-grid float-left" style="width: auto">
-                <a asp-action="ById" asp-route-id="@plannedTask.Id">
-                    <div class="card-body">
-                        @if (plannedTask.Title.Length > 10)
-                        {
-                            <h5 class="card-title">
-                                @plannedTask.Title ...
-                            </h5>
-                        }
-                        else
-                        {
-                            <h5 class="card-title">
-                                @plannedTask.Title
-                            </h5>
-                        }
+            
+         @if(Model.PlannedTasks.Any(x => x.Date < DateTime.Now))
+            {
 
-                        <p class="card-text">Дата: @plannedTask.Date.ToString("dd/MM/yyyy")</p>
-                        <p class="card-text">Час: @plannedTask.StartTime.ToShortTimeString()</p>
-                        <p />
-                        <div>
-                            <a class="btn btn-primary" a asp-action="ById" asp-route-id="@plannedTask.Id">Детайли</a>
+                <h5 class="card-title alert-danger">
+                    Има неизпълнени задачи преди @DateTime.Now.Date.ToString("dd/MM/yyyy"): 
+                    @foreach (var lateTask in Model.PlannedTasks.Where(x => x.Date < DateTime.Now))
+                    {
+                    <li>- @lateTask.Title</li>
+                    }
+                </h5>
+            }
+
+            @foreach (var plannedTask in this.Model.PlannedTasks)
+            {
+                <div class="card col-3 featured-services-grid float-left" style="width: auto">
+                    <a asp-action="ById" asp-route-id="@plannedTask.Id">
+                        <div class="card-body">
+                            @if (plannedTask.Title.Length > 10)
+                            {
+                                <h5 class="card-title">
+                                    @plannedTask.Title ...
+                                </h5>
+                            }
+                            else
+                            {
+                                <h5 class="card-title">
+                                    @plannedTask.Title
+                                </h5>
+                            }
+
+                            <p class="card-text">Дата: @plannedTask.Date.ToString("dd/MM/yyyy")</p>
+                            <p class="card-text">Час: @plannedTask.StartTime.ToShortTimeString()</p>
+                            <p />
+                            <div>
+                                <a class="btn btn-primary" a asp-action="ById" asp-route-id="@plannedTask.Id">Детайли</a>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-        }
-    </div>
+                    </a>
+                </div>
+            }
+        </div>
 </body>

@@ -20,6 +20,11 @@
             this.plannedTasksRepository = plannedTasksRepository;
         }
 
+        public bool Exists(int id)
+        {
+            return this.plannedTasksRepository.AllAsNoTracking().FirstOrDefault(x => x.Id == id) != null;
+        }
+
         public async Task CreateAsync(CreatePlannedTaskInputModel input, string userId)
         {
             var plannedTask = new PlannedTask

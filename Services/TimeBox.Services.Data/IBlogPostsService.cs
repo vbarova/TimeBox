@@ -9,6 +9,8 @@
 
     public interface IBlogPostsService
     {
+        bool Exists(int id);
+
         Task CreateBlogPostAsync(CreateBlogPostInputModel input, string userId, string imagePath);
 
         IEnumerable<BlogPostInListViewModel> GetAll();
