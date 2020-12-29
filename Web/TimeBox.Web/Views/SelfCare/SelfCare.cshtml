@@ -43,6 +43,22 @@
         </div>
     </header>
 
-
+    <div>
+        <h2>Изпълнени задачи за @DateTime.Now.ToString("dd.MM.yyyy")</h2>
+        <div class="overflow-auto">
+            @foreach (var task in this.Model.PlannedTasksMarkedAsDone)
+            {
+                <div>
+                    <div>
+                        <a asp-action="ById" asp-route-id="@task.Id">
+                            <ul>
+                                    @task.Title
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
 </body>
 
