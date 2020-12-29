@@ -32,7 +32,7 @@
     @foreach (var note in this.Model.Notes)
     {
 
-        <div class="post-preview">
+        <div>
             <a asp-action="ById" asp-route-id="@note.Id">
                 <h3 class="post-title">
                     @note.Title
@@ -41,11 +41,16 @@
                     @note.Description
                 </h5>
             </a>
-            <p class="post-meta">
+            <p>
                 Създадена на @note.CreatedOn.ToString("dd/MM/yyyy")
             </p>
         </div>
-        <hr>
+        <form asp-action="Delete" asp-route-id="@note.Id">
+            <button class="btn btn-danger float-left">Изтрий &rarr;</button>
+        </form>
+        <br />
+        <br />
+        <hr />
 
     }
 

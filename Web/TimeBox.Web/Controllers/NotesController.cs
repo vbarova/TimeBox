@@ -55,6 +55,12 @@
             };
 
             return this.View(viewModel);
+        }
+
+        public async Task<IActionResult> Delete(int id)
+        {
+            await this.notesService.DeleteAsync(id);
+            return this.Redirect("/Notes/All");
+        }
     }
-}
 }

@@ -48,5 +48,12 @@
                 .ToList();
             return notes;
         }
+
+        public async Task DeleteAsync(int id)
+        {
+            var note = this.notesRepository.All().FirstOrDefault(x => x.Id == id);
+            this.notesRepository.Delete(note);
+            await this.notesRepository.SaveChangesAsync();
+        }
     }
 }

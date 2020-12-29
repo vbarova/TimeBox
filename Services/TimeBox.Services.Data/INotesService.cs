@@ -10,5 +10,7 @@
         Task CreateAsync(CreateNoteInputModel input, string userId);
 
         IEnumerable<NoteInListViewModel> GetAll(ApplicationUser user);
+
+        Task DeleteAsync(int id);
     }
 }
